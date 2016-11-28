@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="zhouqi.com.myshopping.Presentation.main.myself.LandActivity">
+    <RelativeLayout
+        android:background="@color/green"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:id="@+id/textView5"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#e2cfcf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.pkmmte.view.CircularImageView
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/logo"
+            app:selector="true"
+            app:border_color="#fff"
+            app:border_width="1dp"
+            app:border="true"
+            app:shadow="true"
+            app:selector_color="#e0000000"
+            app:selector_stroke_color="#e0000000"
+            app:selector_stroke_width="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView4" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout">
+
+            <ImageView
+                android:src="@drawable/ic_person_accent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:textColorHint="#d9d0d0"
+                android:hint="手机号/邮箱"
+                android:background="@null"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/et_land_username"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/imageView5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignStart="@+id/relativeLayout"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:id="@+id/relativeLayout2">
+
+
+            <ImageView
+                android:src="@drawable/ic_lock_accent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView6"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:textColorHint="#d9d0d0"
+                android:hint="请输入密码"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/et_land_password"
+                android:password="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:textSize="@dimen/_20sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:background="@color/green"
+            android:id="@+id/bt_land"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:textSize="@dimen/_18dp"
+            android:textColor="@color/green"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="忘记密码"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/bt_land"
+            android:layout_alignEnd="@+id/bt_land" />
+
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/green"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="注册"
+            android:id="@+id/tv_land_login"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>

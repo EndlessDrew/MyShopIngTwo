@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zhouqi.com.myshopping.MainActivity">
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_gravity="center"
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar">
+            <TextView
+                android:id="@+id/tv_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:layout_marginBottom="@dimen/_15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/supermarket"
+                android:layout_alignBottom="@+id/toolbar"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll_title"
+        android:layout_marginBottom="@dimen/_60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_advertisement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_supermarket"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/shop_selector"
+        android:text="@string/supermarket"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_60dp" />
+        <TextView
+            android:id="@+id/tv_message"
+            android:padding="@dimen/padding_5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/message_selector"
+            android:text="@string/message"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60dp" />
+        <TextView
+            android:id="@+id/tv_contacts"
+            android:padding="@dimen/padding_5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/contacts_selector"
+            android:text="@string/contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60dp" />
+        <TextView
+            android:id="@+id/tv_myself"
+            android:padding="@dimen/padding_5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/myself_selector"
+            android:text="@string/myself"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60dp" />
+    </LinearLayout>
+</RelativeLayout>

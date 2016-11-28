@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <ImageView
+           android:scaleType="fitXY"
+           android:gravity="center"
+           android:id="@+id/iv_item_pic"
+           android:padding="5dp"
+           android:background="@drawable/ic_people_two"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:layout_gravity="center"
+           />
+   </LinearLayout>
+    <TextView
+        android:id="@+id/iv_item_name"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="图片"
+        android:layout_height="@dimen/_25dp" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <zhouqi.com.myshopping.Presentation.main.shop.MyViewPager
+            android:id="@+id/item_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#a99f9f"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/iv_all"
+                android:layout_weight="1"
+                android:src="@mipmap/img_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_electron"
+                android:layout_weight="1"
+                android:src="@mipmap/img_electron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_dress"
+                android:layout_weight="1"
+                android:src="@mipmap/img_dress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_toys"
+                android:layout_weight="1"
+                android:src="@mipmap/img_toys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/iv_book"
+                android:layout_weight="1"
+                android:src="@mipmap/img_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_gift"
+                android:layout_weight="1"
+                android:src="@mipmap/img_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_other"
+                android:layout_weight="1"
+                android:src="@mipmap/img_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_household"
+                android:layout_weight="1"
+                android:src="@mipmap/img_household"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:descendantFocusability="afterDescendants"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="150dp">
+    <ImageView
+        android:layout_margin="3dp"
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        android:src="@mipmap/logo"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/iv_person_goods_pic"
+         />
+    <LinearLayout
+        android:layout_margin="3dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/iv_person_goods_pic">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称："
+            android:id="@+id/tv_person_item_nickname"
+            android:layout_below="@+id/iv_person_goods_pic"
+            android:layout_toStartOf="@+id/checkBox" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:id="@+id/tv_person_item_username"
+            android:layout_below="@+id/tv_person_item_nickname"
+            android:layout_toEndOf="@+id/iv_person_goods_pic" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述："
+            android:id="@+id/tv_person_item_descripe"
+            android:layout_below="@+id/tv_person_item_username"
+            android:layout_alignEnd="@+id/tv_person_item_username" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/red"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 100.0"
+            android:id="@+id/tv_person_item_price"
+            android:layout_below="@+id/tv_person_item_descripe"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

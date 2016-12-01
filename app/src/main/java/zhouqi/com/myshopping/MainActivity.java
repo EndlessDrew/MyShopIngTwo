@@ -12,10 +12,10 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import zhouqi.com.myshopping.Presentation.main.contacts.Fragment_Contacts;
-import zhouqi.com.myshopping.Presentation.main.message.Fragment_Message;
-import zhouqi.com.myshopping.Presentation.main.myself.Fragment_Myself;
-import zhouqi.com.myshopping.Presentation.main.shop.Fragment_Shop;
+import zhouqi.com.myshopping.Presention.main.contacts.Fragment_Contacts;
+import zhouqi.com.myshopping.Presention.main.message.Fragment_Message;
+import zhouqi.com.myshopping.Presention.main.myself.Fragment_Myself;
+import zhouqi.com.myshopping.Presention.main.shop.Fragment_Shop;
 
 public class MainActivity extends AppCompatActivity {
     @Bind(R.id.vp_advertisement)

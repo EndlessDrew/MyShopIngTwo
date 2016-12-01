@@ -1,12 +1,18 @@
 package zhouqi.com.myshopping.Network;
 
+import com.google.gson.Gson;
+
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.FormBody;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
+import zhouqi.com.myshopping.Model.enity.UserEntity;
 
 /**
  * 联网获取商品信息
@@ -50,7 +56,7 @@ public class ShopClient {
     }
 
     /**
-     *获取所有的商品
+     *获取商品详情
      */
     public Call getGoodsData(String uuid){
         RequestBody requestBody = new FormBody.Builder()
@@ -62,6 +68,21 @@ public class ShopClient {
                 .build();
         return okHttpClient.newCall(request);
     }
+    /**
+     *更新信息
+     */
+    public Call getUpdateData(UserEntity data,File file){
+       RequestBody requestBody=new MultipartBody.Builder()
+               .addFormDataPart("user",new Gson().toJson(data))
+               .addFormDataPart("image",file.getName(),RequestBody.create(MediaType.parse("image/png"),file))
+               .build();
+        Request request = new Request.Builder()
+                .url(ShopApi.BASE_URL+ShopApi.UPDATE)
+                .post(requestBody)
+                .build();
+        return okHttpClient.newCall(request);
+    }
+
 
 
 }

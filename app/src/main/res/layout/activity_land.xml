@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="zhouqi.com.myshopping.Presentation.main.myself.LandActivity">
+    tools:context="zhouqi.com.myshopping.Presention.main.myself.LandActivity">
     <RelativeLayout
         android:background="@color/green"
         android:layout_width="match_parent"

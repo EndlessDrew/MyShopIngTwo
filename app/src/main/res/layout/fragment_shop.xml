@@ -3,17 +3,17 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <zhouqi.com.myshopping.Presentation.main.shop.HorizontalListView
+    <zhouqi.com.myshopping.Presention.main.shop.HorizontalListView
         android:id="@+id/horListView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_30dp">
-    </zhouqi.com.myshopping.Presentation.main.shop.HorizontalListView>
+    </zhouqi.com.myshopping.Presention.main.shop.HorizontalListView>
     <TextView
         android:background="@color/green"
         android:layout_width="match_parent"
         android:layout_height="1dp" />
 
-    <zhouqi.com.myshopping.Presentation.main.shop.Layout
+    <zhouqi.com.myshopping.Presention.main.shop.Layout
         android:id="@+id/Pcf"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -23,7 +23,7 @@
             android:layout_height="match_parent">
         </android.support.v7.widget.RecyclerView>
 
-    </zhouqi.com.myshopping.Presentation.main.shop.Layout>
+    </zhouqi.com.myshopping.Presention.main.shop.Layout>
 
 
 </LinearLayout>

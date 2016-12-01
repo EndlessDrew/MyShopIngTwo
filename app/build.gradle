@@ -23,11 +23,11 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.0'
-//    注解
+    //    注解
     compile 'com.jakewharton:butterknife:7.0.1'
     //圆形头像
     compile 'com.pkmmte.view:circularimageview:1.1'
-//    imageLoader
+    //    imageLoader
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     //recycleView
     compile files('libs/android-support-v7-recyclerview.jar')
@@ -41,4 +41,5 @@ dependencies {
     compile files('libs/gson-2.3.1.jar')
     //获取相册或者拍照图片
     compile 'org.hybridsquad.android.photocropper:library:2.1.0'
+    compile files('libs/eventbus-3.0.0.jar')
 }

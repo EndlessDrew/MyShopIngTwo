@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="#e2cfcf"
 
-    tools:context="zhouqi.com.myshopping.Presentation.main.myself.LoginActivity">
+    tools:context="zhouqi.com.myshopping.Presention.main.myself.LoginActivity">
 
 
     <RelativeLayout
@@ -55,6 +55,7 @@
             android:layout_toEndOf="@+id/textView6" />
 
         <ImageView
+            android:background="@drawable/ic_person_accent"
             android:clickable="true"
             android:layout_width="80dp"
             android:layout_height="match_parent"

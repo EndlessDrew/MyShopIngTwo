@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="zhouqi.com.myshopping">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".ShopApplication"
@@ -18,10 +21,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Presentation.details.GoodsDetailActivity" />
-        <activity android:name=".Presentation.main.myself.LandActivity" />
-        <activity android:name=".Presentation.main.myself.LoginActivity" />
-        <activity android:name=".Presentation.main.myself.PersonActivity"></activity>
+        <activity android:name=".Presention.details.GoodsDetailActivity" />
+        <activity android:name=".Presention.main.myself.LandActivity" />
+        <activity android:name=".Presention.main.myself.LoginActivity" />
+        <activity android:name=".Presention.main.myself.PersonActivity" />
+        <activity android:name=".Presention.main.myself.UpdataImage.ShowImageActivity" />
+        <activity android:name=".Presention.main.myself.UpdataImage.UpdataGoodsActivity"></activity>
     </application>
 
 </manifest>

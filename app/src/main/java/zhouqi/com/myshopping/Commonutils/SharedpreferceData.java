@@ -10,7 +10,7 @@ import zhouqi.com.myshopping.Model.enity.LoginDatas;
  */
 public class SharedpreferceData {
     public   static  final String sharedName = "land";
-    private  static  final String STATE ="state";
+    public   static  final String STATE ="state";
     /**
      * 用户名
      */
@@ -32,9 +32,10 @@ public class SharedpreferceData {
      */
     private static final String UUID ="uuid";
     /**
-     * 用户名
+     * 用户密码
      */
     private static final String PASSWORD ="password";
+    private static SharedPreferences sp;
 
     /**
      * 存储用户状态
@@ -59,7 +60,14 @@ public class SharedpreferceData {
      * 读取用户存储的数据
      */
     public  static boolean getState(Context context ){
-        SharedPreferences sp  = context.getSharedPreferences(sharedName,context.MODE_PRIVATE);
+        sp = context.getSharedPreferences(sharedName,context.MODE_PRIVATE);
         return  sp.getBoolean(STATE,false) ;
+    }
+
+    public static  String  getName(Context context){
+      return   sp.getString(NAME,null);
+    }
+    public static  String  getUuid(Context context){
+        return   sp.getString(UUID,null);
     }
 }

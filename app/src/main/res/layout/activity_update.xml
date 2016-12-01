@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Presention.main.myself.UpdataImage.ShowImageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ShowImage_toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/green"
+        android:layout_height="50dp">
+    </android.support.v7.widget.Toolbar>
+    <GridView
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:id="@+id/gv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </GridView>
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView_selected"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+            <Button
+                android:id="@+id/bt_showImage_selected"
+                android:text="已选中（0/8）"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:background="@color/green"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
